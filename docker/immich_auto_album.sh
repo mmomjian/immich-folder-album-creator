@@ -24,4 +24,11 @@ fi
 
 
 BASEDIR=$(dirname "$0")
+
+echo "$(date -Iseconds): starting immich-folder-album-creator in immich_auto_album.sh
+args: $args
+command: xargs python3 -u $BASEDIR/immich_auto_album.py"
+
 echo $args | xargs python3 -u $BASEDIR/immich_auto_album.py
+
+echo "$(date -Iseconds): done immich-folder-album-creator in immich_auto_album.sh"
